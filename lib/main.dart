@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           systemOverlayStyle: SystemUiOverlayStyle.light,
-          elevation: 0
+          elevation: 0,
+          iconTheme: IconThemeData(
+           color: Colors.black, //change your color here
+          ),
         ),
       ),
       home: const HomePage(),
