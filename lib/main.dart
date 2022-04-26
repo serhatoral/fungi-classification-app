@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
         appBarTheme: const AppBarTheme(
+          centerTitle: true,
           backgroundColor: Colors.transparent,
+          foregroundColor: Colors.black,
           systemOverlayStyle: SystemUiOverlayStyle.light,
           elevation: 0,
           iconTheme: IconThemeData(

@@ -39,10 +39,10 @@ class _ResultPageState extends State<ResultPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.green[100],
       appBar: AppBar(
         title: const Text(
-          'Sınıflandırma Sonucu',
+          'SINIFLANDIRMA SONUCU',
         ),
       ),
       body: Column(
