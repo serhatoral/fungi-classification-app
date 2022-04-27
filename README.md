@@ -11,6 +11,4 @@ Uygulama, Flutter kullanılarak geliştirilmiştir. Kullanıcı mantar görünt�
 - Görüntüleri almak için [Image Picker](https://pub.dev/packages/image_picker) paketi,
 - Cnn modelini kullanmak için de [tflite](https://pub.dev/packages/tflite) paketi kullanılmıştır.
 
-![homepage](https://user-images.githubusercontent.com/81564885/165598567-73e749a9-5baa-4ce7-b2ca-900dcec3e969.jpeg)
-
-![sinek](https://user-images.githubusercontent.com/81564885/165598722-8a29e61b-7798-4351-a23d-3b72e0afec37.jpeg)
+<img src="https://user-images.githubusercontent.com/81564885/165598567-73e749a9-5baa-4ce7-b2ca-900dcec3e969.jpeg" width='300'/> &nbsp; &nbsp; &nbsp; <img src="https://user-images.githubusercontent.com/81564885/165598722-8a29e61b-7798-4351-a23d-3b72e0afec37.jpeg" width='292'/> 
