@@ -21,7 +21,14 @@ class _ResultPageState extends State<ResultPage> {
   }
 
   classify(img) async {
-    var output = await Tflite.runModelOnImage(path: img.path);
+    
+   var output = await Tflite.runModelOnImage(
+      path: img.path,
+      numResults: 77,
+      threshold: 0,
+      imageMean: 0,
+      imageStd: 1,
+      );
     setState(() {
       _prediction = output;
     });
