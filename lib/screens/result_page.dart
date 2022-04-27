@@ -46,7 +46,7 @@ class _ResultPageState extends State<ResultPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[100],
+      backgroundColor: Colors.yellow[50],
       appBar: AppBar(
         title: const Text(
           'SINIFLANDIRMA SONUCU',

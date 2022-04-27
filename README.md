@@ -1,16 +1,16 @@
-# fungi_classification
+# Fungi Classification App
 
-A new Flutter project.
+Bu uygulama, bir Evrişimli Sinir Ağı(CNN) modeli kullanarak mantar görüntülerinden mantar türlerini belirlemekte ve sınıflandırmaktadır. Sınıflandırdığı mantar hakkında kullanıcıya bilgi vermekte, zehirli etkiye sahip olup olmadığı ya da yenilip yenilmediği gibi bilgiler vermektedir.
 
-## Getting Started
+Bu sınıflandırmayı yapan CNN modelinin nasıl hazırlandığını incelemek için [TIKLAYINIZ!](https://github.com/serhatoral/fungi-classification/blob/main/Mantar_T%C3%BCr%C3%BC_Tespiti.ipynb)
 
-This project is a starting point for a Flutter application.
+## Uygulama
 
-A few resources to get you started if this is your first Flutter project:
+Uygulama, Flutter kullanılarak geliştirilmiştir. Kullanıcı mantar görüntülerini ister kameradan direk çekerek isterse de galariden seçerek sınıflandırma yapabilecektir.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Görüntüleri almak için [Image Picker](https://pub.dev/packages/image_picker) paketi,
+- Cnn modelini kullanmak için de [tflite](https://pub.dev/packages/tflite) paketi kullanılmıştır.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![homepage](https://user-images.githubusercontent.com/81564885/165598567-73e749a9-5baa-4ce7-b2ca-900dcec3e969.jpeg)
+
+![sinek](https://user-images.githubusercontent.com/81564885/165598722-8a29e61b-7798-4351-a23d-3b72e0afec37.jpeg)
