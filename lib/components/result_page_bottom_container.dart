@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:fungi_classification/components/edible_alert.dart';
+import 'package:fungi_classification/components/not_edible_alert.dart';
+import 'package:fungi_classification/components/poison_alert.dart';
+import 'package:fungi_classification/components/unknown_alert.dart';
 import 'package:fungi_classification/constants/fungi_dictionary.dart';
 
 class BottomContainerofResultPage extends StatelessWidget {
@@ -24,10 +28,16 @@ class BottomContainerofResultPage extends StatelessWidget {
         child: Column(
           children: [
             prediction != null
-                ? Text(
-                    FungiDictionary.nameSplit('${prediction![0]['label']}'),
-                    style: const TextStyle(fontSize: 20),
-                  )
+                ? Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [          
+                    Text(
+                        FungiDictionary.nameSplit('${prediction![0]['label']}'),
+                        style: const TextStyle(fontSize: 20),
+                      ),
+                      returnAlert('${prediction![0]['label']}')
+                  ],
+                )
                 : const Text('null'),
             const SizedBox(
               height: 25,
@@ -44,4 +54,23 @@ class BottomContainerofResultPage extends StatelessWidget {
       ),
     );
   }
+
+  returnAlert(fungiName){
+      if (FungiDictionary.poisonousMushrooms.contains(fungiName)) {
+        return const PoisonAlert();
+      } else {
+        if(FungiDictionary.unknownMushrooms.contains(fungiName)){
+          return const UnknownAlert();
+        }else{
+          if(FungiDictionary.notEdibleMushrooms.contains(fungiName)){
+            return const NotEdibleAlert();
+          } else{
+            return const EdibleAlert();
+          }
+        }
+      }
+  }
+
+
+
 }

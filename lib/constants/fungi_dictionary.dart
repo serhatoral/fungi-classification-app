@@ -49,7 +49,7 @@ class FungiDictionary{
     "12750_Craterellus_cornucopioides" : "Borazan Mantarı ya da Bol Boynuz olarak bilinen bu mantar görünüşü kasvetli olsada yenilebilen bir mantardır. Mantar gövdeleri, yaprak döken ağaçların altında toprakta büyür. Sert yapıları ve eti vardır. Bu nedenle kurtçuklar tarafından kolay istila edilemezler. Kış aylarında rahatlıkla bulunabilen güzel bir mantar türüdür.",
     "12763_Hericium_cirrhatum" : "yüksektir. Gençken kokusu belirli değildir ancak çürümeye başladığında mide bulandırıcı bir koku yayar.",
     "12918_Cyathus_striatus" : "Türkiye’de Dikenli Çizgiliyuva Mantarı olarak Çatalca -Kocaeli Bölümü, Karadeniz Bölgesi ve Yukarı Sakarya Bölümünde kaydı yapılmış, tıbbi açıdan büyük önem arz eden enterasan görüntüsü ile ilgi çeken bir mantardır. Yenmeyen bir mantar türü olduğu bildirilmektedir.",
-    "12956_Cystolepiota_seminuda" : "yenmeyen, yaygın bir mantarıdır. Humusta, genellikle orman yollarında bulunur. Diğer lepiotoid mantarlar gibi, sapsız solungaçlara ve beyaz bir spor baskısına sahiptir.",
+    "12956_Cystolepiota_seminuda" : "Yenmeyen, yaygın bir mantarıdır. Humusta, genellikle orman yollarında bulunur. Diğer lepiotoid mantarlar gibi, sapsız solungaçlara ve beyaz bir spor baskısına sahiptir.",
     "13002_Daedalea_quercina" : "Avrupa, Asya, Kuzey Afrika ve Avustralasya'da bulunur. Yenmeyen bir bitki olmasına rağmen doğal tarak olarak kullanılabilir ve kimyasal araştırmalara konu olmuştur.",
     "13007_Daldinia_concentrica" : "Yenmeyen mantar Daldinia concentrica, Kral Alfred'in keki, kramp topları ve kömür mantarı da dahil olmak üzere birçok yaygın adla bilinir. Diğer mantarlarda olduğu gibi, hafif sporlar küresel olarak dağılır ve mantarlar, koşulların uygun olduğu her yerde gelişir.",
     "13361_Disciotis_venosa" : "Yenilebilir bir türdür. Ancak bir yazar, diğer birkaç kahverengi kap mantarıyla karıştırılabileceğinden, yalnızca mikroskobik karakterlerini kontrol edecek donanıma sahip koleksiyoncuların türleri tüketmeyi düşünmesi gerektiğini belirtmiştir. Nisan ve Mayıs aylarında meyve verirler, genellikle koyu kahverengi renklerinden dolayı yerlerini bulmak zordur. Kuzey Amerika ve Avrupa'da bulunurlar.",
@@ -95,5 +95,29 @@ class FungiDictionary{
 
 
 
+  static List<String> poisonousMushrooms = [
 
+    '10252_Amanita_muscaria', '10257_Amanita_pantherina', '10258_Amanita_phalloides var. phalloides',
+    '10273_Amanita_virosa', "10440_Antrodiella_serpula", "11206_Bulgaria_inquinans", "11600_Chlorociboria_aeruginascens",
+    "13625_Entoloma_incanum", "13765_Entoloma_serrulatum", "14422_Gymnopilus_spectabilis",
+    "14454_Gyromitra_esculenta", "14607_Helvella_crispa", "14833_Hygrocybe_conica var. conica", "15078_Hypholoma_fasciculare",
+    "15624_Laccaria_amethystina", "18328_Phaeolepiota_aurea", "19213_Pseudoclitocybe_cyathiformis", "19975_Russula_fragilis var. fragilis", 
+    "20216_Scleroderma_areolatum"
+  ];
+
+  static List<String> notEdibleMushrooms =[
+      '10000_Abortiporus_biennis', "10667_Ascocoryne_sarcoides", "10940_Auriscalpium_vulgare",
+      "10994_Basidioradulum_radula", "11043_Bjerkandera_adusta", "11202_Buglossoporus_quercinus",
+      "11384_Ceratiomyxa_fruticulosa", "12918_Cyathus_striatus", "12956_Cystolepiota_seminuda",
+      "13002_Daedalea_quercina", "13007_Daldinia_concentrica", "14073_Fuligo_septica", 
+      "14190_Geastrum_michelianum", "14435_Gymnopus_dryophilus", "14822_Hygrocybe_cantharellus",
+      "16723_Marasmius_rotula", "17041_Mitrula_paludosa", "19549_Pycnoporellus_fulgens",
+      "20897_Thelephora_terrestris"
+  ];
+
+  static List<String> unknownMushrooms=[
+      '10234_Amanita_fulva', '10266_Amanita_strobiliformis', "10969_Baeospora_myosura",
+      "11912_Conocybe_albipes", "13764_Entoloma_sericeum var. sericeum", "18484_Pholiota_flammans"
+
+  ];
 }
